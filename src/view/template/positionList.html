@@ -1,0 +1,14 @@
+<ul class="bg-w position-list">
+    <!--注意下面ng-repeat中是data,同js中暴露的那个data接口相同.main.js中在调用positionlist这个指令的时候传参数 data="list"-->
+    <li class="item" ng-repeat="item in data|filterByObj:filterObj" ui-sref="position({id:item.id})">
+        <img class="f-l logo" ng-src="{{item.imageUrl}}" alt="">
+        <h3 class="title" ng-bind="item.name"></h3>
+        <p class="text" ng-bind="item.companyName+'['+item.cityName+']'+' '+item.industryName+' '+item.scaleName"></p>
+        <p class="text" ng-bind="item.salaryName"></p>
+        <!--注意ng-bind里的字符串拼接-->
+        <p class="text" ng-bind="item.date"></p>
+        <p class></p>
+        <div class="clear"></div>
+        <!--清除浮动带来的影响-->
+    </li>
+</ul>

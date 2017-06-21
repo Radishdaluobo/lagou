@@ -1,0 +1,6 @@
+bower_components/
+.vscode/
+node_modules/
+build/
+dist/
+npm-debug.log
