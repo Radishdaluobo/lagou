@@ -30,4 +30,3 @@ angular.module('app').config(['$validationProvider', function($validationProvide
     };
     $validationProvider.setExpression(expression).setDefaultMsg(defaultMsg);
 }]);
-
