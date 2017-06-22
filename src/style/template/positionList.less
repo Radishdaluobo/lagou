@@ -6,6 +6,7 @@
     padding:7px 3px;
     list-style: none;
     border-bottom: 1px solid @listLineColor;
+    position: relative;
     .logo{
       .w(65);
       .h(65);
@@ -16,6 +17,17 @@
     }
     .text{
       margin: 0;
+    }
+    .star{
+      background-image: url(../image/star.png);
+      width: 46px;
+      height: 44px;
+      position:absolute;
+      top:15px;
+      right:10px;
+      &.starActive{
+         background-image: url(../image/star-active.png);
+      }
     }
   }
 

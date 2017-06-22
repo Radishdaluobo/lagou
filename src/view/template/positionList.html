@@ -7,7 +7,7 @@
         <p class="text" ng-bind="item.salaryName"></p>
         <!--注意ng-bind里的字符串拼接-->
         <p class="text" ng-bind="item.date"></p>
-        <p class></p>
+        <span ng-if="isStar" class="f-r star {{isStar ? 'starActive' : ''}}"></span>
         <div class="clear"></div>
         <!--清除浮动带来的影响-->
     </li>
