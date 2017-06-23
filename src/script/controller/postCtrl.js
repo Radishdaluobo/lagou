@@ -23,11 +23,9 @@ angular.module('app').controller('postCtrl', ['$http', '$scope', function($http,
                 break;
             case 'pass':
                 $scope.filterObj['state'] = '1'; //神坑,这里的1和-1是字符串格式的
-                console.log($scope.filterObj);
                 break;
             case 'fail':
                 $scope.filterObj['state'] = '-1';
-                console.log($scope.filterObj);
                 break;
             default:
         }
